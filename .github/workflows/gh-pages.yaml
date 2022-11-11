@@ -37,6 +37,8 @@ jobs:
         pytest -v
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: build
       # env:
       #   ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
       #   BASE_BRANCH: main-mlflow
